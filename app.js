@@ -1,5 +1,3 @@
-// let parrafo=document.querySelector("p");
-// parrafo.innerHTML="Elije un número del 1 al 10";
 let listaNumerosSorteados = [];//Me daba error ya que tenía esta linea declarada en la linea 5 y en la linea 4, la llamaba pero aun no la reconocía JS
 let numeroMaximo=10;
 let numsecreto=generaNumSec();
@@ -15,10 +13,6 @@ function textoElemento(elemento,texto){
 
 function verificarIntento(){
     let numeroDeUsuario=parseInt(document.getElementById("valorUsuario").value);
-    /*console.log(typeof(numsecreto));
-    console.log(typeof(numeroDeUsuario));
-    console.log(numeroDeUsuario);
-    console.log(numeroDeUsuario===numsecreto);*/
     console.log(intentos);
     if (numsecreto===numeroDeUsuario){ //El Usuario Acertó
         textoElemento("p",`Acertaste en ${intentos}${(intentos=== 1)? " Intento" : " Intentos"}`);
